@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id-ID">
+
+<head>
+    <link href="./tailwind.css" rel="stylesheet">
+    <link href="./image.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Andrew Bivaldi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        header {
+            background: url('bg-425.jpg');
+        }
+
+        @media only screen and (min-width:640px) {
+            header {
+                background: url('bg-640.jpg');
+            }
+        }
+
+        @media only screen and (min-width:768px) {
+            header {
+                background: url('bg-768.jpg');
+            }
+        }
+
+        @media only screen and (min-width:1024px) {
+            header {
+                background: url('bg-1024.jpg');
+            }
+        }
+
+        @media only screen and (min-width:1025px) {
+            header {
+                background: url('bg-max.jpg');
+            }
+        }
+
+        /* Default background by https://www.pexels.com/@knownasovan */
+        header {
+            background: url('./Resources/pexels-elijah-o\'donnell-3473569.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent">
+
+        <div class="p-4">
+            <div class="font-extrabold tracking-widest text-xl"><a href="./landing.html"
+                    class="transition duration-500 hover:text-yellow-300">Andrew Bivaldi</a></div>
+        </div>
+
+        <!-- Nav Items Working on Tablet & Bigger Sceen -->
+        <div class="p-4 hidden md:flex flex-row justify-between font-bold">
+            <a id="hide-after-click" href="./about.html"
+                class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-yellow-300 transition duration-500">About</a>
+            <a href="./portfolio.html"
+                class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-yellow-300 transition duration-500">Portfolio</a>
+            <a href="./contact.html"
+                class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-yellow-300 transition duration-500">Contact</a>
+        </div>
+
+        <!-- Burger Nav Button on Mobile -->
+        <div id="nav-open" class="p-4 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </div>
+    </nav>
+
+    <!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+    <div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+        <div class="p-2 divide-y divide-gray-600 flex flex-col">
+            <a href="./about.html" class="p-2 font-semibold hover:text-yellow-300">About</a>
+            <a href="./portfolio.html" class="p-2 font-semibold hover:text-yellow-300">Portfolio</a>
+            <a href="contact.html" class="p-2 font-semibold hover:text-yellow-300">Contact</a>
+        </div>
+    </div>
+
+    <header id="up" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+        <!-- Overlay Background + Center Control -->
+        <div class="h-screen bg-opacity-50 bg-black flex items-center justify-center">
+
+            <section class="mx-auto max-w-md ">
+
+                <div class="shadow-2xl relative">
+                    <!-- large image on slides -->
+                    <div class="h-96 overflow-hidden flex">
+                        <div class="mySlides hidden">
+                            <div class="image1 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image2 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image3 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image4 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image5 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image6 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image7 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image8 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image9 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image10 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image11 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image12 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image13 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image14 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image15 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image16 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image17 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image18 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image19 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image20 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image21 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image22 h-full w-full object-cover"></div>
+                        </div>
+                        <div class="mySlides hidden">
+                            <div class="image23 h-full w-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- butttons -->
+                    <a class="absolute left-0 inset-y-0 flex items-center -mt-32 px-4 text-white hover:text-gray-800 cursor-pointer text-3xl font-extrabold"
+                        onclick="plusSlides(-1)">❮</a>
+                    <a class="absolute right-0 inset-y-0 flex items-center -mt-32 px-4 text-white hover:text-gray-800 cursor-pointer text-3xl font-extrabold"
+                        onclick="plusSlides(1)">❯</a>
+
+                    <!-- image description -->
+                    <div class="text-center text-white font-light tracking-wider bg-green-900 opacity-70 py-2">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- smaller images under description -->
+                    <div class="flex">
+                        <div>
+                            <img class="image1 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#"
+                                onclick="currentSlide(1)" alt="Andrew Bivaldi Portfolio">
+                        </div>
+                        <div>
+                            <img class="image2 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#"
+                                onclick="currentSlide(2)" alt="Andrew Bivaldi Portfolio">
+                        </div>
+                        <div>
+                            <img class="image3 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#"
+                                onclick="currentSlide(3)" alt="Portfolio">
+                        </div>
+                        <div>
+                            <img class="image4 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#"
+                                onclick="currentSlide(4)" alt="Portfolio">
+                        </div>
+                        <div>
+                            <img class="image5 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#"
+                                onclick="currentSlide(5)" alt="Portfolio">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </header>
+
+
+    <script>
+        //JS to switch slides and replace text in bar//
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("description");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" opacity-100", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " opacity-100";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+</body>
+
+</html>
