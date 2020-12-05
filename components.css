@@ -8,3 +8,12 @@
 .flashy-btn {
     @apply px-4 py-2 my-5 mx-4 border-2 bg-yellow-400 hover:bg-yellow-200 border-transparent rounded hover:border-yellow-600 font-bold text-gray-900 shadow-md transition duration-500 md:text-lg;
 }
+.hero {
+    @apply bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative;
+}
+.overlay-background {
+    @apply h-screen bg-opacity-50 bg-black flex items-center justify-center;
+}
+.form-component {
+    @apply flex sm:justify-center sm:min-h-screen sm:items-center sm:pt-0 mx-auto;
+}
